@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "$types/*": ["src/types/*"],
+      "$utils/*": ["src/utils/*"],
+    }
+  }
+}

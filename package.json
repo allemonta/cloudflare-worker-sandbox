@@ -1,0 +1,35 @@
+{
+  "name": "typescript-base-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "engines": {
+    "node": ">=20",
+    "npm": ">=9"
+  },
+  "scripts": {
+    "start": "node --import tsx .",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allemonta/typescript-base-template.git"
+  },
+  "keywords": [],
+  "author": "Alessandro Montanari <alessandro.montanari7@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allemonta/typescript-base-template/issues"
+  },
+  "homepage": "https://github.com/allemonta/typescript-base-template#readme",
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "eslint": "^8.56.0",
+    "nodemon": "^3.0.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
