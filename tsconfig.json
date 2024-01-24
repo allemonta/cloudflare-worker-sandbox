@@ -2,9 +2,25 @@
   "extends": "@tsconfig/node20/tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "types": ["@cloudflare/workers-types"],
     "paths": {
       "$types/*": ["src/types/*"],
       "$utils/*": ["src/utils/*"],
-    }
+      "$schemas/*": ["src/schemas/*"],
+      "$services/*": ["src/services/*"],
+      "$components/*": ["src/components/*"]
+    },
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": [
+      "esnext"
+    ],
+    "esModuleInterop": true,
+    "strict": true,
   }
 }

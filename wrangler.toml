@@ -1,0 +1,11 @@
+name = "sandbox"
+main = "src/index.ts"
+compatibility_date = "2023-12-01"
+node_compat = true
+
+[placement]
+mode = "smart"
+
+[[hyperdrive]]
+binding = "HYPERDRIVE_SUPABASE"
+id = "af56ef3599fa47278e433b27a95f259c"

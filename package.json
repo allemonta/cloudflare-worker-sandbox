@@ -8,8 +8,11 @@
     "npm": ">=9"
   },
   "scripts": {
-    "start": "node --import tsx .",
-    "dev": "nodemon"
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "makemigrations": "drizzle-kit generate:pg",
+    "migrate": "node --import tsx -r dotenv/config -r reflect-metadata src/scripts/migrate"
   },
   "repository": {
     "type": "git",
@@ -23,13 +26,24 @@
   },
   "homepage": "https://github.com/allemonta/typescript-base-template#readme",
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240117.0",
     "@tsconfig/node20": "^20.1.2",
     "@types/node": "^20.11.0",
     "@typescript-eslint/eslint-plugin": "^6.18.1",
     "@typescript-eslint/parser": "^6.18.1",
+    "drizzle-kit": "^0.20.13",
     "eslint": "^8.56.0",
     "nodemon": "^3.0.2",
     "tsx": "^4.7.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "wrangler": "^3.23.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.2",
+    "drizzle-orm": "^0.29.3",
+    "hono": "^3.12.6",
+    "postgres": "^3.4.3",
+    "reflect-metadata": "^0.2.1",
+    "tsyringe": "^4.8.0"
   }
 }
